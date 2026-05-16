@@ -14,11 +14,15 @@ h1 {
   height: fit-content;
   /* background-color: #93e3fd; */
 }
+
 .main-header {
   background-color: #93e3fd;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   .top-nav {
     display: flex;
@@ -149,14 +153,26 @@ h1 {
 }
 
 /* main */
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.fadein.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .slider-background {
   background-color: #fefb9a;
   padding: 5px;
   padding-bottom: 1px;
+  z-index: 0;
 }
 .top-slider {
   padding: 0;
   width: 100%;
+  z-index: 0;
 
   /* display: flex;
   align-items: center; */
@@ -170,6 +186,7 @@ h1 {
   /* margin-left: 50%;
   margin-right: 50%; */
   position: relative;
+  z-index: 0;
 }
 .slick-prev,
 .slick-next {
