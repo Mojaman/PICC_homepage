@@ -51,9 +51,9 @@
     <!-- <div id="hamburger" class="hamburger2">
       <i class="fa-solid fa-bars"></i>
     </div> -->
-    <main>
+    <div id="overlay" class="overlay">
       <section id="hiro-img">
-        <div class="slider-background">
+        <div class="slider-background" id="slider-background">
           <div class="container top-slider">
             <div class="single-item">
               <div>
@@ -70,7 +70,11 @@
           </div>
         </div>
       </section>
-      <!-- <section id="member-introduction">
+      <div class="overlay-bottom"></div>
+    </div>
+    <main>
+      <div id="wrap-main" class="wrap-main">
+        <!-- <section id="member-introduction">
         <div class="container members">
           <div class="member-index">
             <h2>〜愉快な仲間たち〜</h2>
@@ -110,73 +114,74 @@
           <p>のページを観る</p>
         </div>
       </section> -->
-      <section id="welcome">
-        <div class="container">
-          <div class="index">
-            <h2>ようこそ！</h2>
-          </div>
-          <div class="content">
-            <p id="template_welcome">読み込み中です！</p>
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <div class="container">
-          <div class="big-index">
-            <strong> ABOUT </strong>
-          </div>
-          <div class="index">
-            <h2>活動内容</h2>
-          </div>
-          <div class="content">
-            <div class="img-container">
-              <img
-                src="icon.png"
-                alt="活動内容の写真"
-                width="50%"
-                height="30%"
-              />
+        <section id="welcome">
+          <div class="container">
+            <div class="index">
+              <h2>ようこそ！</h2>
             </div>
-            <p id="template_activity">読み込み中です！</p>
-            <div class="view-more">
-              <a href="Subpages/article.html?page=activity">
-                <strong>View more</strong>
-              </a>
+            <div class="content">
+              <p id="template_welcome">読み込み中です！</p>
             </div>
           </div>
+        </section>
+        <section id="about">
+          <div class="container">
+            <div class="big-index">
+              <strong> ABOUT </strong>
+            </div>
+            <div class="index">
+              <h2>活動内容</h2>
+            </div>
+            <div class="content">
+              <div class="img-container">
+                <img
+                  src="icon.png"
+                  alt="活動内容の写真"
+                  width="50%"
+                  height="30%"
+                />
+              </div>
+              <p id="template_activity">読み込み中です！</p>
+              <div class="view-more">
+                <a href="Subpages/article.html?page=activity">
+                  <strong>View more</strong>
+                </a>
+              </div>
+            </div>
 
-          <div class="index">
-            <h2>部室紹介</h2>
-          </div>
-          <div class="content">
-            <div class="img-container">
-              <img
-                src="icon.png"
-                alt="活動内容の写真"
-                width="50%"
-                height="30%"
-              />
+            <div class="index">
+              <h2>部室紹介</h2>
             </div>
-            <p id="template_room">読み込み中です！</p>
-            <div class="view-more">
-              <a href="Subpages/article.html?page=room">
-                <strong>View more</strong>
-              </a>
+            <div class="content">
+              <div class="img-container">
+                <img
+                  src="icon.png"
+                  alt="活動内容の写真"
+                  width="50%"
+                  height="30%"
+                />
+              </div>
+              <p id="template_room">読み込み中です！</p>
+              <div class="view-more">
+                <a href="Subpages/article.html?page=room">
+                  <strong>View more</strong>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="news">
-        <div class="container">
-          <div class="big-index">
-            <strong> NEWS </strong>
+        </section>
+        <section id="news">
+          <div class="container">
+            <div class="big-index">
+              <strong> NEWS </strong>
+            </div>
+            <div class="content">
+              <h3>記事一覧</h3>
+              <div id="display_news"></div>
+            </div>
           </div>
-          <div class="content">
-            <h3>記事一覧</h3>
-            <div id="display_news"></div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <!-- 以下script -->
