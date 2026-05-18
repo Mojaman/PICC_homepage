@@ -11,7 +11,10 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 998;
-  /* display: none; */
+  display: block;
+}
+.overlay.inactive {
+  display: none;
 }
 .overlay-bottom {
   width: 100%;
@@ -28,6 +31,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+.wrap-main.active {
+  position: relative;
 }
 .no-animation * {
   animation: none !important;
