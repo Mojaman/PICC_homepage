@@ -245,6 +245,10 @@ h1 {
   background-color: #99a5ff;
   border-bottom: 1px solid #000000;
 }
+.room-content {
+  background-color: #99a5ff;
+  padding: 10px;
+}
 .members {
   background-color: #fd9191;
   padding-top: 0px;
@@ -414,4 +418,25 @@ h1 {
   padding: 10px;
   border-radius: 40px;
   margin-bottom: 10px;
+}
+.room-img-header {
+  background-color: #fefb9a;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.room-img-index {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: clamp(20px, 1.2rem + 1vw, 36px);
+  background-color: #9abdfe;
+}
+.room-img-container {
+  background-color: #99ffaf;
+  padding: 10px;
+  margin: 0;
 }
