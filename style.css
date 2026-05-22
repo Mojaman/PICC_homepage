@@ -243,6 +243,7 @@ h1 {
 .activity-content {
   padding: 10px;
   background-color: #99a5ff;
+  border-bottom: 1px solid #000000;
 }
 .members {
   background-color: #fd9191;
