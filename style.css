@@ -242,11 +242,11 @@ h1 {
 }
 .activity-content {
   padding: 10px;
-  background-color: #99a5ff;
+  /* background-color: #99a5ff; */
   border-bottom: 1px solid #000000;
 }
 .room-content {
-  background-color: #99a5ff;
+  /* background-color: #99a5ff; */
   padding: 10px;
 }
 .members {
