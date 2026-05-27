@@ -12,6 +12,8 @@ const slider = document.getElementById("slider-background");
 
 const doorImg = document.getElementById("door-img");
 
+const letters = document.querySelectorAll(".letter");
+
 hamburger.addEventListener("click", () => {
   globalNav.classList.toggle("active");
   globalNav.classList.add("loaded");
@@ -71,5 +73,40 @@ function openDoor() {
 }
 
 ["click", "touchstart"].forEach((event) =>
-  doorImg.addEventListener(event, openDoor),
+  doorImg.addEventListener(event, async () => {
+    openDoor();
+    setTimeout(async () => {
+      await titleAnimation();
+    }, 1500);
+  }),
 );
+
+async function titleAnimation() {
+  for (const [index, letter] of letters.entries()) {
+    if (index < 3) {
+      // 日常
+      await new Promise((resolve) => {
+        setTimeout(() => {
+          letter.classList.add("eye-catch-animation");
+          resolve();
+        }, index * 200);
+      });
+    } else if (index === 5) {
+      // の
+      await new Promise((resolve) => {
+        setTimeout(() => {
+          letter.classList.add("eye-catch-animation");
+          resolve();
+        }, index * 100);
+      });
+    } else {
+      // から 非常口
+      await new Promise((resolve) => {
+        setTimeout(() => {
+          letter.classList.add("eye-catch-animation");
+          resolve();
+        }, index * 30);
+      });
+    }
+  }
+}
