@@ -70,7 +70,7 @@ body {
 .animation-title {
   /* background-color: #d4cf2a; */
   /* background-color: #2aacd4; */
-  background-color: #ff5379;
+  background-color: #fc6586;
   opacity: 0;
 
   /* めちゃくちゃ大きく */
@@ -137,12 +137,25 @@ body {
 }
 @keyframes titleAnim {
   0% {
+    box-shadow: 0px 4px 3px rgba(63, 0, 0, 0.671);
     opacity: 0;
     transform: translateX(500px);
+    /* font-size: clamp(40px, 2.5rem + 0.8vw, 64px); */
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-30px);
+    /* font-size: clamp(40px, 2.5rem + 0.8vw, 64px); */
   }
   100% {
     opacity: 1;
     transform: translateX(0);
+    box-shadow: 0px 4px 3px rgba(63, 0, 0, 0);
+    /* font-size: clamp(50px, 3.2rem + 1vw, 80px); */
   }
 }
 .title-animation {
@@ -150,12 +163,22 @@ body {
 }
 @keyframes subtitleAnim {
   0% {
+    box-shadow: 0px 4px 3px rgba(63, 0, 0, 0.671);
     opacity: 0;
     transform: translateX(-500px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(30px);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
+    box-shadow: 0px 4px 3px rgba(63, 0, 0, 0);
   }
 }
 .subtitle-animation {
