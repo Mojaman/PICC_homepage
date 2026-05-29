@@ -875,3 +875,11 @@ details.smooth-details[open] .details-content {
   font-size: clamp(10px, 0.6rem + 1vw, 18px);
   font-weight: bold;
 }
+.bottom-color {
+  background-color: #ff8c82;
+  height: 50px;
+  position: fixed;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+}
