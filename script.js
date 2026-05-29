@@ -1,3 +1,5 @@
+const body = document.querySelector(".body");
+
 const hamburger = document.getElementById("hamburger");
 
 const globalNav = document.querySelector(".global-nav");
@@ -41,6 +43,7 @@ console.log(nav.type);
 if (nav.type === "back_forward") {
   // 戻った時にはアニメーションを表示しないように
   eyeCatch.classList.remove("active");
+  body.classList.remove("no-scroll");
 }
 
 //ページ更新時に、スクロール位置がsliderの範囲内であれば、スクロール位置をリセットするyo
@@ -161,7 +164,7 @@ async function titleAnimation() {
   }
 }
 
-// test
+// hiderのアニメーション
 function hiderAppear() {
   hiderContainer.style.display = "block";
   hiders.classList.add("appear");
@@ -186,6 +189,7 @@ function hiderDisappear() {
 
   setTimeout(() => {
     hiderContainer.style.display = "none";
+    body.classList.remove("no-scroll");
   }, 800);
 
   // alert("animation finished")

@@ -1,7 +1,10 @@
-body {
+.body {
   /* background-color: #d968bb; */
   margin: 0;
   padding: 0;
+}
+.body.no-scroll {
+  overflow: hidden;
 }
 .hider-container {
   position: fixed;
@@ -339,6 +342,8 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 998;
   display: block;
+
+  /* overflow: hidden; */
 }
 .overlay.inactive {
   display: none;
