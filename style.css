@@ -889,3 +889,27 @@ details.smooth-details[open] .details-content {
   left: 0;
   width: 100%;
 }
+.back-page {
+  position: sticky;
+  bottom: 0.1dvh;
+  left: 50%;
+  /* transform: translateX(50%); */
+  z-index: 10000;
+
+  /* a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fefb9a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 3px rgba(63, 0, 0, 0.671);
+    font-size: clamp(14px, 0.8rem + 1vw, 24px);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  a:hover {
+    background-color: #f5ec00;
+    cursor: pointer;
+  } */
+}

@@ -10,6 +10,8 @@ const roomIntro = document.getElementById("room-intro");
 
 const roomImg = document.getElementById("room-img");
 
+const backPage = document.querySelector(".back-page a");
+
 // 変数宣言
 
 let currentIndex = 0;
@@ -97,3 +99,12 @@ function reFadein() {
   roomIntro.classList.add("fadein");
   roomImg.classList.add("popup");
 }
+
+backPage.addEventListener("click", (e) => {
+  e.preventDefault();
+  try {
+    window.history.back();
+  } catch (error) {
+    window.location.href = "../index.html";
+  }
+});
