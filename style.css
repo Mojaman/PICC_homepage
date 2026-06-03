@@ -754,13 +754,14 @@ h1 {
 }
 .colored-box {
   /* background-color: #ffb199c9; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(199, 75, 106, 0.918),
     rgb(255, 192, 203)
-  );
+  ); */
+  background-color: #ff00625d;
   padding: 10px;
-  border-radius: 40px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 .activity-list {
@@ -796,6 +797,11 @@ details.smooth-details[open] .details-content {
   width: 16.66%;
   height: 150%;
   border: 1px solid #000000;
+
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
 }
 .room-img-index[data-index="0"] {
   height: 150%;
