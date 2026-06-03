@@ -875,11 +875,19 @@ details.smooth-details[open] .details-content {
 }
 .footer-container {
   background-color: #f59797;
+  margin: 0;
   padding: 10px;
   text-align: center;
   color: #000000;
   font-size: clamp(10px, 0.6rem + 1vw, 18px);
   font-weight: bold;
+}
+.footer-img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
 }
 .bottom-color {
   background-color: #ff8c82;
