@@ -899,11 +899,13 @@ details.smooth-details[open] .details-content {
 }
 .bottom-color {
   background-color: #ff8c82;
-  height: 50px;
+  height: 150px;
   position: fixed;
   bottom: -50px;
   left: 0;
   width: 100%;
+  transform: translateY(100px);
+  z-index: 9999;
 }
 .back-page {
   position: sticky;
