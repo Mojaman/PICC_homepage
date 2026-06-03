@@ -591,6 +591,7 @@ h1 {
 .room-content {
   /* background-color: #99a5ff; */
   padding: 10px;
+  height: fit-content;
 }
 .members {
   background-color: #fd9191;
@@ -782,7 +783,7 @@ details.smooth-details[open] .details-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 150%;
 }
 .room-img-index {
   display: block;
@@ -793,20 +794,20 @@ details.smooth-details[open] .details-content {
   background-color: #9abdfe;
   filter: brightness(0.6);
   width: 16.66%;
-  height: auto;
+  height: 150%;
   border: 1px solid #000000;
 }
 .room-img-index[data-index="0"] {
   height: 150%;
-  background-color: #e9644c;
+  background-color: #f7087f;
 }
 .room-img-index[data-index="1"] {
   height: 150%;
-  background-color: #f8fc33;
+  background-color: #f5f10c;
 }
 .room-img-index[data-index="2"] {
   height: 150%;
-  background-color: #2dc020;
+  background-color: #64f106;
 }
 .room-img-index[data-index="3"] {
   height: 150%;
@@ -818,10 +819,10 @@ details.smooth-details[open] .details-content {
 }
 .room-img-index[data-index="5"] {
   height: 150%;
-  background-color: #7f3cd6;
+  background-color: #880eec;
 }
 .room-img-index:not(:first-child) {
-  height: 100%;
+  height: 150%;
   border-left: none;
 }
 .room-img-index:hover {

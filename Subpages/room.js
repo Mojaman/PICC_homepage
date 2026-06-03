@@ -23,21 +23,21 @@ const roomData = [
     index: 0,
     imgSrc: "../sample.png",
     alt: "部室の画像1",
-    color: "#e9644c",
+    color: "#f7087f",
     intro: "test",
   },
   {
     index: 1,
     imgSrc: "../sample.png",
     alt: "部室の画像2",
-    color: "#f8fc33",
+    color: "#f5f10c",
     intro: "test",
   },
   {
     index: 2,
     imgSrc: "../sample.png",
     alt: "部室の画像3",
-    color: "#2dc020",
+    color: "#64f106",
     intro: "test",
   },
   {
@@ -58,7 +58,7 @@ const roomData = [
     index: 5,
     imgSrc: "../sample.png",
     alt: "部室の画像6",
-    color: "#7f3cd6",
+    color: "#880eec",
     intro: "test",
   },
 ];
