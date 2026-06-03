@@ -360,6 +360,20 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 998;
 }
+.tips {
+  position: fixed;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff8e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.671);
+  font-size: clamp(14px, 0.8rem + 1vw, 24px);
+  font-weight: bold;
+  width: fit-content;
+  height: auto;
+}
 .wrap-main {
   margin: 0;
   padding: 0;
