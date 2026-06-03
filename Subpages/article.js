@@ -82,11 +82,20 @@ function pageAdapt() {
   }
 }
 
-backPage.addEventListener("click", (e) => {
-  e.preventDefault();
-  try {
-    window.history.back();
-  } catch (error) {
-    window.location.href = "../index.html";
-  }
-});
+// backPage.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   try {
+//     window.history.back();
+//   } catch (error) {
+//     window.location.href = "../index.html";
+//   }
+// });
+
+// logo.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   try {
+//     window.history.back();
+//   } catch (error) {
+//     window.location.href = "../index.html";
+//   }
+// });

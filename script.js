@@ -40,12 +40,25 @@ console.log(nav.type);
 // "navigate"     → 新規ページ遷移
 // "reload"       → 再読み込み
 // "back_forward" → 戻る/進む
-if (nav.type === "back_forward") {
-  // 戻った時にはアニメーションを表示しないように
-  eyeCatch.classList.remove("active");
-  body.classList.remove("no-scroll");
-  resetBottomColor();
-}
+
+// if (nav.type === "back_forward") {
+//   // 戻った時にはアニメーションを表示しないように
+//   eyeCatch.classList.remove("active");
+//   body.classList.remove("no-scroll");
+//   resetBottomColor();
+// }
+
+window.addEventListener("load", () => {
+  // sessionStorage にフラグがなければアニメーションを再生
+  if (sessionStorage.getItem("animationPlayed")) {
+    // 戻った時にはアニメーションを表示しないように
+    eyeCatch.classList.remove("active");
+    body.classList.remove("no-scroll");
+    resetBottomColor();
+  } else {
+    sessionStorage.setItem("animationPlayed", "true");
+  }
+});
 
 //ページ更新時に、スクロール位置がsliderの範囲内であれば、スクロール位置をリセットするyo
 isResetOverLay();

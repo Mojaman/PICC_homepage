@@ -4,6 +4,8 @@ const globalNav = document.querySelector(".global-nav");
 
 const close = document.getElementById("close");
 
+const logo = document.querySelector(".logo a");
+
 const imgIndexes = document.querySelectorAll(".room-img-index");
 
 const roomIntro = document.getElementById("room-intro");
@@ -100,11 +102,22 @@ function reFadein() {
   roomImg.classList.add("popup");
 }
 
-backPage.addEventListener("click", (e) => {
-  e.preventDefault();
-  try {
-    window.history.back();
-  } catch (error) {
-    window.location.href = "../index.html";
-  }
-});
+// history.pushState({ tmp: true }, "", "../index.html");
+
+// backPage.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   try {
+//     window.history.back();
+//   } catch (error) {
+//     window.location.href = "../index.html";
+//   }
+// });
+
+// logo.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   try {
+//     window.history.back();
+//   } catch (error) {
+//     window.location.href = "../index.html";
+//   }
+// });

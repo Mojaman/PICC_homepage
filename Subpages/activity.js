@@ -4,6 +4,8 @@ const globalNav = document.querySelector(".global-nav");
 
 const close = document.getElementById("close");
 
+const logo = document.querySelector(".logo a");
+
 const backPage = document.querySelector(".back-page a");
 
 hamburger.addEventListener("click", () => {
@@ -62,11 +64,20 @@ document.querySelectorAll("details.smooth-details").forEach((details) => {
   });
 });
 
-backPage.addEventListener("click", (e) => {
-  e.preventDefault();
-  try {
-    window.history.back();
-  } catch (error) {
-    window.location.href = "../index.html";
-  }
-});
+// backPage.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   try {
+//     window.history.back();
+//   } catch (error) {
+//     window.location.href = "../index.html";
+//   }
+// });
+
+// logo.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   try {
+//     window.history.back();
+//   } catch (error) {
+//     window.location.href = "../index.html";
+//   }
+// });
