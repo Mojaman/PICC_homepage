@@ -73,7 +73,9 @@ function pageAdapt() {
 
     h4.textContent = pageData.content[i].subheading;
     h4.classList.add("index");
-    p.textContent = pageData.content[i].sentence.replace(/\n/g, "<br>");
+    p.innerHTML = pageData.content[i].sentence.replace(/\n/g, "<br>");
+    p.classList.add("article-sentence");
+    p.classList.add("colored-box");
 
     div.appendChild(h4);
     div.appendChild(p);
