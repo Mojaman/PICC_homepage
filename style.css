@@ -540,6 +540,18 @@ h1 {
     a:hover {
       color: #f5ec00;
     }
+
+    .comingsoon {
+      color: #857c7c;
+      text-decoration: none;
+      cursor: default;
+      font-weight: normal;
+    }
+    .comingsoon:hover {
+      color: #857c7c;
+      text-decoration: none;
+      cursor: default;
+    }
   }
 }
 @keyframes nav-notactive {
