@@ -36,6 +36,8 @@ const hider2 = document.querySelector(".hider2");
 
 const nav = performance.getEntriesByType("navigation")[0];
 
+const downArrow = document.querySelector(".fa-angles-down");
+
 const parms = new URLSearchParams(location.search);
 
 const newsFlag = parms.get("news");
@@ -119,6 +121,14 @@ function isResetOverLay() {
     }, 100);
   }
 }
+
+downArrow.addEventListener("click", () => {
+  window.scrollTo({
+    top: window.innerHeight,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
 // ドアの開閉アニメーション
 
