@@ -21,45 +21,50 @@ let currentIndex = 0;
 const roomData = [
   {
     index: 0,
-    imgSrc: "../sample.png",
+    imgSrc: "../room1.jpeg",
     alt: "部室の画像1",
     color: "#f7087f",
-    intro: "test",
+    intro:
+      "物情の部室全体像です。部室は広々としていて、部員が自由に使えるスペースがたくさんあります。",
   },
   {
     index: 1,
-    imgSrc: "../sample.png",
+    imgSrc: "../room2.jpeg",
     alt: "部室の画像2",
     color: "#f5f10c",
-    intro: "test",
+    intro:
+      "主にVtuberやプログラミングなど、メインの活動で使用されるパソコンです。",
   },
   {
     index: 2,
-    imgSrc: "../sample.png",
+    imgSrc: "../room3.jpeg",
     alt: "部室の画像3",
     color: "#64f106",
-    intro: "test",
+    intro:
+      "パソコンというより大画面のほうがメインです。みんなでゲームをしたりするときに使います。",
   },
   {
     index: 3,
-    imgSrc: "../sample.png",
+    imgSrc: "../room4.jpeg",
     alt: "部室の画像4",
     color: "#0f8b8b",
-    intro: "test",
+    intro: "物情備え付けのベッド(？)です。部員の中にはここで寝る人もいるとか…",
   },
   {
     index: 4,
-    imgSrc: "../sample.png",
+    imgSrc: "../room5.jpeg",
     alt: "部室の画像5",
     color: "#323ee6",
-    intro: "test",
+    intro:
+      "本棚です。部員たちが持ち寄った本がたくさん置いてあります。技術書のほかにも攻略本や参考書が置いてあったりします。",
   },
   {
     index: 5,
-    imgSrc: "../sample.png",
+    imgSrc: "../room6.jpeg",
     alt: "部室の画像6",
     color: "#880eec",
-    intro: "test",
+    intro:
+      "物情の設備は結構充実してて、冷蔵庫のほかにもオーブントースターやかき氷機などがあります！",
   },
 ];
 
