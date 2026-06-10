@@ -362,7 +362,7 @@
 }
 .tips {
   position: fixed;
-  bottom: 35%;
+  bottom: 25%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff8e;
@@ -928,6 +928,23 @@ details.smooth-details[open] .details-content {
 .popup {
   animation: popup 0.4s ease;
   opacity: 1;
+}
+@keyframes tipPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateX(-50%);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.05) translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+  }
+}
+.tips.popup {
+  animation: tipPop 0.4s ease;
 }
 .footer-container {
   background-color: #f59797;

@@ -35,11 +35,16 @@ const activitySnap = await getDoc(activityRef);
 const roomRef = doc(db, "template", "room");
 const roomSnap = await getDoc(roomRef);
 
+let tipsList = [];
+let tipsList2 = [];
+
 //DOM取得
 const templateWelcome = document.getElementById("template_welcome");
 const templateActivity = document.getElementById("template_activity");
 const templateRoom = document.getElementById("template_room");
 const displayNews = document.getElementById("display_news");
+const tips = document.querySelector(".tips");
+const tipContent = document.getElementById("tip-content");
 
 templateWelcome.innerHTML = welcomeSnap.data().text.replace(/\n/g, "<br>");
 templateActivity.innerHTML = activitySnap.data().text.replace(/\n/g, "<br>");
@@ -47,6 +52,7 @@ templateRoom.innerHTML = roomSnap.data().text.replace(/\n/g, "<br>");
 
 //ページ読み込み後に実行
 await reloadNews();
+await reloadTips();
 
 async function reloadNews() {
   displayNews.innerHTML = "";
@@ -64,4 +70,40 @@ async function reloadNews() {
       displayNews.appendChild(div);
     }
   });
+}
+
+//tipリストの取得作成だけ
+async function reloadTips() {
+  const collectionRef = collection(db, "tips");
+  const querySnapshot = await getDocs(collectionRef);
+  tipsList = [];
+  querySnapshot.forEach((doc) => {
+    tipsList.push(doc.data().text);
+  });
+  tipsList2 = shuffle(tipsList);
+
+  await showTips();
+}
+
+async function showTips() {
+  for (const tip of tipsList2) {
+    tipContent.textContent = tip;
+    void tips.offsetWidth; // ← これが強制リフロー
+    tips.classList.add("popup");
+    await wait(6000);
+    tips.classList.remove("popup");
+  }
+  showTips();
+}
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // 要素を入れ替え
+  }
+  return array;
+}
+
+function wait(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
