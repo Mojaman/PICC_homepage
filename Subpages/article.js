@@ -48,6 +48,7 @@ close.addEventListener("click", () => {
 //DOM取得
 const title = document.getElementById("title");
 const content = document.getElementById("content");
+const testTop = document.getElementById("test-top-img");
 
 const params = new URLSearchParams(location.search);
 const page = params.get("page");
@@ -61,6 +62,14 @@ const contentLength = pageData.content.length;
 
 //ページ読み込み後に実行
 pageAdapt();
+temporaryFunc();
+
+function temporaryFunc() {
+  if (page === "MigungboV6kREOrTkuIQ") {
+    // alert("d");
+    testTop.src = "../fes-top.png";
+  }
+}
 
 function pageAdapt() {
   title.innerText = pageData.title;
